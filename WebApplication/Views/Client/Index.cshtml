@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication.ViewModel.Client.ClientViewModel>
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="ClientList" class="col-md-8">
+    @Html.Partial("_ClientList", Model)
+</div>
+
+<div id="ClientDetails" class="col-md-4"></div>
+<div class="clearfix"></div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
